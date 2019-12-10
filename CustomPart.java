@@ -3,7 +3,7 @@ import java.util.*;
 public class CustomPart
 {
     ArrayList<Integer> partList = new ArrayList<Integer>();
-    private int partIndex;
+    private int partIndex = 1;
     private int partNum = partIndex - 1;
     private boolean CAM;
     private boolean partMachining;
@@ -17,10 +17,11 @@ public class CustomPart
     
     public void setPartNum()
     {
-        partList.add(partIndex+1);
+        partList.add(partIndex);
+        partIndex++;
     }
     
-    public int getPartNum()
+    public int getCustomPartNum()
     {
         return partIndex;
     }
@@ -33,7 +34,7 @@ public class CustomPart
     public String toString()
     {
         String output = new String();
-        output = "Custom Part Number: " +getPartNum()+"\nCAM Done: "+ CAM + "\nMachining done: "+partMachining;
+        output = "Custom Part Number: " +getCustomPartNum()+"\nCAM Done: "+ CAM + "\nMachining done: "+partMachining;
         return output;
     }
 }
