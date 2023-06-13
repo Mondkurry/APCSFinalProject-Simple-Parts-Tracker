@@ -11,6 +11,9 @@ My java program lets the user create a mechanism and add both Custom Parts and C
 
 In addition to assigning parts to the mechanism, it can also track the mechanism through whichever stage of the build process it is currently in. For example if a custom part has been CADed, CAMed, but has not yet been fabricated, the program will print this information to the user. This makes it very easy to know exactly where the parts are for a given assembly at any given moment thus ensuring that every part gets fabricated.
 
+![image](https://github.com/Mondkurry/APCS-Project/assets/30964417/92ca9f00-25d5-4e36-9af0-03950e08a4be)
+
+
 ## Synopsis on how this project went
 
 At first my project was very difficult because I picked a topic that was a little too complex to do with only in class knowledge. But after I decreased the scope of my project from the entire robot to one subsystem it became a lot more manageable for my knowledge. 
