@@ -4,12 +4,10 @@
 ## [Project Link](https://sites.google.com/view/aryanmondkar-apcs-2020/home)
 
 ## Summary
-My object tracks all the parts that go on a mechanism for a robot.
-
 Robots can get very complicated and have lots of moving components. A lot of the time after a CAD file has been made for a part, it might not get fabricated because it gets lost in the hundreds of other part files. This can create massive delays in the build process and given that we only have 6 weeks to build the robot, it can be detrimental to our season. 
 
-My java program lets the user create a mechanism and add both Custom Parts and COTS (Commercial off the Shelf) parts to that mechanism. 
-
+**My java program lets the user create a mechanism and add both Custom Parts and COTS (Commercial off the Shelf) parts to that mechanism. 
+**
 In addition to assigning parts to the mechanism, it can also track the mechanism through whichever stage of the build process it is currently in. For example if a custom part has been CADed, CAMed, but has not yet been fabricated, the program will print this information to the user. This makes it very easy to know exactly where the parts are for a given assembly at any given moment thus ensuring that every part gets fabricated.
 
 ## Synopsis
