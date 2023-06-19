@@ -1,40 +1,56 @@
-import java.util.*;
-
-public class CustomPart
+public class CustomPart implements GetName
 {
-    ArrayList<Integer> partList = new ArrayList<Integer>();
-    private int partIndex = 1;
-    private int partNum = partIndex - 1;
+    private String partName;
     private boolean CAM;
     private boolean partMachining;
-    
-    public CustomPart(Integer partNum, boolean CAM, boolean partMachining)
+
+    public CustomPart()//#9 zero arg (3/6)
     {
-        this.partNum = partNum;
+        partName = "elevatorTubing";
+        //Aluminum 2x1 tubing is used to make lots of our structures in robotics
+        CAM = true;
+        //CAM Stands for Computer aided machining, it is the coding of the machine in order to make the part
+        partMachining = true;
+        //Machining is the actual manufactering of the part
+    }
+
+    public CustomPart(String partName, boolean CAM, boolean partMachining)
+    {
+        this.partName = partName;
         this.CAM = CAM;
         this.partMachining = partMachining;
     }
-    
-    public void setPartNum()
+
+    public void MachinePart()// This method machines the part
     {
-        partList.add(partIndex);
-        partIndex++;
+        CAM = true;
+        partMachining = true;
     }
-    
-    public int getCustomPartNum()
+
+    public void CAMPart()// This method CAM's the part but doesnt machine it
     {
-        return partIndex;
+        CAM = true;
     }
-    
-    public void CAMFinished(int partIndex)
+
+    public boolean getMachiningStatus()// Returns machining status
     {
-        boolean CAM = true;
+        return partMachining;
     }
-    
+
+    public String getName()//#20 Called from Interface
+    {
+        return partName;
+    }
+
     public String toString()
     {
         String output = new String();
-        output = "Custom Part Number: " +getCustomPartNum()+"\nCAM Done: "+ CAM + "\nMachining done: "+partMachining;
+        output = "\nCustom Part Name: " +partName+"\nCAM Done: "+ CAM + "\nMachining done: "+getMachiningStatus();
         return output;
     }
 }
+
+
+
+
+
